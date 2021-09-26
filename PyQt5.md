@@ -105,5 +105,27 @@ from PyQt5.QtWidgets import QWidget, QTableWidgetItem
   self.radioButton.isChecked()
   ```
 
+## tabWidget
+
+- 信号
+
+  ```python
+  self.tabWidget.currentChanged.connect()
+  ```
+
+- 当前页面
+
+  ```python
+  self.tabWidget.currentIndex()
+  ```
+
+## label
+
+- 设置label内文字
+
+  ```python
+  self.label_2.setText()
+  ```
+
   
 

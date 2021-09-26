@@ -102,13 +102,13 @@ $$
 - 例子1
 
   $$
-  $$\begin{array}{cl}{\min } & {|\mathcal{S}|} \\ {\text { subject to }} & {\operatorname{tr}\left(\Sigma_{z_{k-1}}^{-1}\right) \geq R} \\ {} & {\mathcal{S} \subseteq\left[m_{x}\right] \operatorname{and} / \text { or } \mathcal{S} \subseteq\left[w_{x} m_{x}\right]} \\ {} & {s \notin\left[m_{x}^{\prime}\right]}\end{array}$$
+  \begin{array}{cl}{\min } & {|\mathcal{S}|} \\ {\text { subject to }} & {\operatorname{tr}\left(\Sigma_{z_{k-1}}^{-1}\right) \geq R} \\ {} & {\mathcal{S} \subseteq\left[m_{x}\right] \operatorname{and} / \text { or } \mathcal{S} \subseteq\left[w_{x} m_{x}\right]} \\ {} & {s \notin\left[m_{x}^{\prime}\right]}\end{array}
   $$
   
 - 例子2
 
   $$
-    \begin{align*}
+  \begin{align*}
     &\max\quad z=\sum\limits_{i=1}^m c_i x_i\\
     & \begin{array}{r@{\quad}r@{}l@{\quad}l}
     s.t.&\sum\limits_{j=1}^m a_{ij} x_j&\leq b_i,  &i=1,2,3\ldots,n\\
