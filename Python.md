@@ -544,3 +544,22 @@ b = set()
 
   ![jpg](fig/matplotlib/multiaxisy.png)
 
+# 描述参数类型
+
+```python
+import gpflux
+
+from gpflux.architectures import Config, build_constant_input_dim_deep_gp
+from gpflux.models import DeepGP
+
+config = Config(
+    num_inducing=25, inner_layer_qsqrt_factor=1e-5, likelihood_noise_variance=1e-2, whiten=True
+)
+deep_gp: DeepGP = build_constant_input_dim_deep_gp(X, num_layers=2, config=config) #deep_gp的类型是DeepGP
+```
+
+```python
+def add(x:int, y:int) -> int:
+	return x + y
+```
+
