@@ -312,59 +312,59 @@
 
 # 列表相关操作
 
-- 交错填充数字
+## 交错填充数字
 
-  希望得到这样一个列表`a = [1,2,1,2,1,2,1,2]`
+希望得到这样一个列表`a = [1,2,1,2,1,2,1,2]`
 
-  ```python
-  a = [i for j in range(5) for i in [1,2]]
-  print(a)
-  ```
+```python
+a = [i for j in range(5) for i in [1,2]]
+print(a)
+```
 
-  ```python
-  [1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
-  ```
+```python
+[1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+```
 
-- 填充连续数字
+## 填充连续数字
 
-  希望得到这样一个列表`a = [1,1,2,2,3,3]`
+希望得到这样一个列表`a = [1,1,2,2,3,3]`
 
-  ```python
-  a = [j for j in range(1, 4) for i in range(2)]
-  print(a)
-  ```
+```python
+a = [j for j in range(1, 4) for i in range(2)]
+print(a)
+```
 
-  ```python
-  [1, 1, 2, 2, 3, 3]
-  ```
+```python
+[1, 1, 2, 2, 3, 3]
+```
 
-- 删除元素
+## 删除元素
 
-  删除`list`中第一个和`val`等值的元素
+删除`list`中第一个和`val`等值的元素
 
-  ```python
-  a = [1,2,34,2,5]
-  a.remove(2)
-  print(a)
-  ```
+```python
+a = [1,2,34,2,5]
+a.remove(2)
+print(a)
+```
 
-  ```bash
-  [1, 34, 2, 5]
-  ```
+```bash
+[1, 34, 2, 5]
+```
 
-  删除索引对应的元素
+删除索引对应的元素
 
-  ```python
-  a = [1,2,3,4,5]
-  b = a.pop(3)
-  print(a)
-  print(b)
-  ```
+```python
+a = [1,2,3,4,5]
+b = a.pop(3)
+print(a)
+print(b)
+```
 
-  ```bash
-  [1, 2, 3, 5]
-  4
-  ```
+```bash
+[1, 2, 3, 5]
+4
+```
 
 # 作图
 
@@ -485,12 +485,31 @@ print(sum([1 for i in dic.values() if i[0] > 0 or i[1]>0]))
 
 # 集合
 
-集合`set`创建一个无序不重复的元素序列
+## 集合`set`创建一个无序不重复的元素序列
 
 ```python
 a = set([1,2,3,4,3,2])
 a = {[1,2,3,4,3,2]}
 b = set()
+```
+
+## 交集、并集、差集
+
+```python
+b = [1,2,3,4,5]
+a = [1,2,3]
+# 交集：
+print(list(set(a).intersection(set(b))))
+# 并集:
+print(list(set(a).union(set(b))))
+# 差集（b中有而a中没有的）:
+print(list(set(b).difference(set(a))))
+```
+
+```bash
+[1, 2, 3]
+[1, 2, 3, 4, 5]
+[4, 5]
 ```
 
 # matplotlib绘图
@@ -562,4 +581,3 @@ deep_gp: DeepGP = build_constant_input_dim_deep_gp(X, num_layers=2, config=confi
 def add(x:int, y:int) -> int:
 	return x + y
 ```
-

@@ -69,15 +69,15 @@
 
 ## 运算符
 
-|       代码       |      符号      |
-| :--------------: | :------------: |
-| `$\textgreater$` | $\textgreater$ |
-|  `$\textless$`   |  $\textless$   |
-|     `$\geq$`     |     $\geq$     |
-|     `$\ge$`      |     $\ge$      |
-|     `$\leq$`     |     $\leq$     |
-|     `$\le$`      |     $\le$      |
-|                  |                |
+|       代码        |      符号      |
+| :---------------: | :------------: |
+| `$\textgreater$`  | $\textgreater$ |
+|   `$\textless$`   |  $\textless$   |
+|     `$\geq$`      |     $\geq$     |
+|      `$\ge$`      |     $\ge$      |
+|     `$\leq$`      |     $\leq$     |
+|      `$\le$`      |     $\le$      |
+| `$\propto$`正比于 |   $\propto$    |
 
 ## 空格
 
@@ -136,4 +136,20 @@ $$
   \end{align*}
   $$
   
+
+# 矩阵
+
+$$
+\begin{bmatrix}
+x_{11}&\cdots&x_{1p}\\
+\vdots&\ddots&\vdots \\
+x_{N1}&\cdots&x_{Np}
+\end{bmatrix}_{N\times P}
+$$
+
+|    代码    |   符号   |
+| :--------: | :------: |
+| `$\cdots$` | $\cdots$ |
+| `$\vdots$` | $\vdots$ |
+| `$\ddots$` | $\ddots$ |
 

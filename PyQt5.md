@@ -1,6 +1,4 @@
-# PyQt5
-
-## 点击子窗口右上角的x后返回主窗口
+# 点击子窗口右上角的x后返回主窗口
 
 ```python
 class Enter_raw_materials(QWidget, Ui_Enter_raw_materials):
@@ -13,20 +11,20 @@ class Enter_raw_materials(QWidget, Ui_Enter_raw_materials):
         main_window.show()
 ```
 
-## 设置控件不可用
+# 设置控件不可用
 
 ```python
 self.lineEdit.setEnabled(False)
 ```
 
-## 通知窗口
+# 通知窗口
 
 ```python
 from PyQt5.QtWidgets import QMessageBox
 QMessageBox.warning(self, '错误', '开始时间不能晚于结束时间')
 ```
 
-## tableWidget
+# tableWidget
 
 ```python
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem
@@ -63,12 +61,21 @@ from PyQt5.QtWidgets import QWidget, QTableWidgetItem
           self.tableWidget_3.setItem(i, j, QTableWidgetItem(str(0)))
   ```
 
-## MessageBox弹窗
+- 信号
+
+  ```python
+  self.tableWidget.doubleClicked.connect(self.show_raw_material_composition) #s
+  ```
+
+  
+
+# MessageBox弹窗
 
 - 带选项的弹窗
 
   ```python
   reply = QMessageBox.warning(self, '警告', '确认删除所选用户？', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+  # 返回结果：QMessageBox.Yes或QMessageBox.No
   ```
 
 - 不带选项的弹窗
@@ -77,7 +84,7 @@ from PyQt5.QtWidgets import QWidget, QTableWidgetItem
    QMessageBox.warning(self, '错误', '请输入合法的元素名称')
   ```
 
-## ComboBox
+# ComboBox
 
 - 设置可选项目
 
@@ -91,7 +98,7 @@ from PyQt5.QtWidgets import QWidget, QTableWidgetItem
   self.comboBox.currentText()
   ```
 
-## radiobutton
+# radiobutton
 
 - 信号
 
@@ -105,7 +112,7 @@ from PyQt5.QtWidgets import QWidget, QTableWidgetItem
   self.radioButton.isChecked()
   ```
 
-## tabWidget
+# tabWidget
 
 - 信号
 
@@ -119,12 +126,20 @@ from PyQt5.QtWidgets import QWidget, QTableWidgetItem
   self.tabWidget.currentIndex()
   ```
 
-## label
+# label
 
 - 设置label内文字
 
   ```python
   self.label_2.setText()
+  ```
+
+# lineEdit
+
+- 设置文字
+
+  ```python
+  self.lineEdit.setText("0")
   ```
 
   
